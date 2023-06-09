@@ -4,6 +4,7 @@
   <artifactId>Curso_selenium_java</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+	  <!-- Este es el plugin de selenium-->
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
