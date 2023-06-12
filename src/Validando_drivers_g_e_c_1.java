@@ -1,5 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Validando_drivers_g_e_c_1 {
 
@@ -11,8 +13,14 @@ public class Validando_drivers_g_e_c_1 {
 		  driver_chrome.get("https://www.google.com");
 		
 		//validando geckodrive
+		  System.setProperty("webdriver.gecko.driver", "E:\\Canal Nicolas Alvarez\\nuevo curso avanzado de selenium con java\\drivers\\geckodriver\\geckodriver.exe");
+		  WebDriver driver_firefox = new FirefoxDriver();
+		  driver_firefox.get("https://www.google.com");
 		  
-	   //validando edgedriver  
+	   //validando edgedriver
+		  System.setProperty("webdriver.edge.driver", "E:\\Canal Nicolas Alvarez\\nuevo curso avanzado de selenium con java\\drivers\\edgedriver\\msedgedriver.exe");
+		  WebDriver driver_edge = new EdgeDriver();
+		  driver_edge.get("https://www.google.com");
 		  
 	}
 
