@@ -24,12 +24,48 @@ public class localizadores_tradicionales {
 		  driver_edge.findElement(By.partialLinkText("Sobre"));
 		  //encontrar elemento por xpath
 		  driver_edge.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/div[2]/a[2]"));
-		  
 		  //metodo basico 5, .quit() = termina la sesion del driver 
 		  driver_edge.quit();
-		//firefox
+		
+	  //firefox
+		  System.setProperty("webdriver.gecko.driver", "E:\\Canal Nicolas Alvarez\\nuevo curso avanzado de selenium con java\\drivers\\geckodriver\\geckodriver.exe");
+		  WebDriver driver_firefox = new FirefoxDriver();
+		  //metodo basico 1, get = nos abre la pagina requerida
+		  driver_firefox.get("https://www.google.com");
+		  //encontrando elemento por id
+		  driver_firefox.findElement(By.id("APjFqb"));
+		  //encontrar elemento por classname
+		  driver_firefox.findElement(By.className("gNO89b"));
+		  //encontrar elemento por name
+		  driver_firefox.findElement(By.name("btnI"));
+		  //encontrar elemento por link text
+		  driver_firefox.findElement(By.linkText("Sobre Google"));
+		  //encontrar elemento por link text parcial
+		  driver_firefox.findElement(By.partialLinkText("Sobre"));
+		  //encontrar elemento por xpath
+		  driver_firefox.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/div[2]/a[2]"));
+		  //metodo basico 5, .quit() = termina la sesion del driver 
+		  driver_firefox.quit();
 		  
-		//chrome  
+	  //chrome  
+		  System.setProperty("webdriver.Chrome.driver", "E:\\Canal Nicolas Alvarez\\nuevo curso avanzado de selenium con java\\drivers\\chromedrvier\\chromedriver.exe");
+		  WebDriver driver_chrome = new ChromeDriver();
+		  //metodo basico 1, get = nos abre la pagina requerida
+		  driver_chrome.get("https://www.google.com");
+		  //encontrando elemento por id
+		  driver_chrome.findElement(By.id("APjFqb"));
+		  //encontrar elemento por classname
+		  driver_chrome.findElement(By.className("gNO89b"));
+		  //encontrar elemento por name
+		  driver_chrome.findElement(By.name("btnI"));
+		  //encontrar elemento por link text
+		  driver_chrome.findElement(By.linkText("Sobre Google"));
+		  //encontrar elemento por link text parcial
+		  driver_chrome.findElement(By.partialLinkText("Sobre"));
+		  //encontrar elemento por xpath
+		  driver_chrome.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/div[2]/a[2]"));
+		  //metodo basico 5, .quit() = termina la sesion del driver 
+		  driver_chrome.quit();
 	}
 
 }
