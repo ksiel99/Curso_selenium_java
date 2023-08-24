@@ -13,12 +13,12 @@ public class interacciones {
 		driver_edge.get("https://www.amazon.com");
 		//send keys 
 		driver_edge.findElement(By.id("twotabsearchtextbox")).sendKeys("nintendo switch");
-	    driver_edge.findElement(By.id("nav-search-submit-button")).click();
+	    //driver_edge.findElement(By.id("nav-search-submit-button")).click();
 		//clear
-		//driver_edge.findElement(By.id("twotabsearchtextbox")).clear();
+		driver_edge.findElement(By.id("twotabsearchtextbox")).clear();
 		//click()
-		//driver_edge.findElement(By.id("nav-hamburger-menu")).click();
-		//submit()
+		driver_edge.findElement(By.id("nav-hamburger-menu")).click();
+		//submit() ya no es valido
 	}
 
 }
