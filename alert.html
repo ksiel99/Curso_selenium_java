@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Alert</h2>
+
+<button onclick="myFunction_alert()">Preciona para alerta</button>
+
+<script>
+function myFunction_alert() {
+  alert("Esta es una alerta en una caja de texto!");
+}
+</script>
+
+<h2>JavaScript Confirm Box</h2>
+<button onclick="myFunction_confirm_alert()">Preciona para confirmar alert</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction_confirm_alert() {
+  var txt;
+  if (confirm("Preciona para confimar o cancelar!")) {
+    txt = "precionaste OK!";
+  } else {
+    txt = "precionaste Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction_alert_prompt()">Preciona para alert prompt</button>
+
+<p id="demo_prompt"></p>
+
+<script>
+function myFunction_alert_prompt() {
+  let text;
+  let person = prompt("Porfavor ingresa tu nombre:", "Harry Potter");
+  if (person == null || person == "") {
+    text = "Cancelaste el prompt.";
+  } else {
+    text = "Hola " + person + "! como estas?";
+  }
+  document.getElementById("demo_prompt").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
